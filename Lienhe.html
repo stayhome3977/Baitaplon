@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #fff; 
+            padding: 20px;
+            background: url('Ảnh/Background1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+        }
+
+        h1, h2, h3 {
+            color: #f1f1f1;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+           
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ffffff;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ffffff;
+        }
+
+        .contact-info a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script src="nocode.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Thông Tin Liên Hệ</h2>
+        <form action="mailto:hoanganh292005@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Nội dung:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Gửi</button>
+        </form>
+
+        <div class="contact-info">
+            <h3>Thông Tin Liên Lạc Khác</h3>
+            <p><strong>Điện thoại:</strong>0364794902 </p>
+            <p><strong>Email:</strong> <a href="mailto:hoanganh292005@gmail.com">hoanganh292005@gmail.com</a></p>
+            <p><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=100023789794949&mibextid=ZbWKwL">Xem trang Facebook của tôi</a></p>
+        </div>
+    </div>
+</body>
+</html>

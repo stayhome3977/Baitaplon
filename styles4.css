@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    body {
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        text-align: center;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative; /* Để hỗ trợ phần tử giả */
+        overflow: hidden; /* Giữ phần tử giả trong khung */
+    }
+    
+    body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('Ảnh/Background4.png'); /* Thay bằng đường dẫn của ảnh nền */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: blur(2.5px); /* Điều chỉnh độ mờ theo ý muốn */
+        z-index: -1; /* Đảm bảo hình nền nằm phía sau nội dung */
+    }
+    
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 1cm;
+    color: #00BFFF; 
+    font-weight: bold;
+}
+
+.about-me {
+    margin: 30px 0;
+}
+
+.intro {
+    display: flex;
+    align-items: center; /* Đặt ảnh và nội dung cùng hàng và căn giữa theo chiều dọc */
+    justify-content: flex-start; /* Đưa ảnh sát bên trái */
+}
+
+.avatar {
+    width: 400px; /* Kích thước lớn hơn */
+    height: 400px; /* Kích thước lớn hơn */
+    border: 5px solid rgba(255, 255, 255, 0.897);
+    object-fit: cover; /* Giữ cho ảnh luôn vừa khít trong khung */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Đổ bóng cho ảnh */
+    margin-right: 20px; /* Khoảng cách giữa ảnh và phần nội dung */
+
+}
+
+.intro-text {
+    max-width: 600px; /* Giới hạn độ rộng của nội dung */
+    text-align: left; /* Căn trái cho phần giới thiệu */
+    background-color: rgba(255, 255, 255, 0.8); /* Nền trắng với độ trong suốt */
+    border-radius: 15px; /* Bo tròn góc */
+    padding: 20px; /* Khoảng cách bên trong */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Đổ bóng cho khung nội dung */
+}
+
+.intro-text h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px; /* Thêm khoảng cách dưới tiêu đề */
+}
+
+.intro-text p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 15px; /* Thêm khoảng cách giữa các đoạn văn */
+    line-height: 1.6; /* Khoảng cách giữa các dòng */
+}
+
+.social-links {
+    margin: 50px 0;
+}
+
+.social-links h3 {
+    font-size: 1.8em;
+    color: pink;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-btn {
+    padding: 15px 30px;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.facebook {
+    background-color: #00b7ff;
+}
+
+.tiktok {
+    background-color: #000000;
+}
+
+.instagram {
+    background-color: #ff0090;
+}
+
+.social-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+        background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+        padding: 10px;
+        color: #ffffff;
+        font-size: 14px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    
+
+.intro-text p:last-child {
+    margin-bottom: 0; /* Bỏ khoảng cách cuối cùng */
+}
+
